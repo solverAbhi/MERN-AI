@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Box, Avatar, Typography } from "@mui/material";
 import { useAuth } from "../../context/AuthContext";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -10,7 +10,6 @@ function extractCodeFromString(message: string) {
     return blocks;
   }
 }
-
 function isCodeBlock(str: string) {
   if (
     str.includes("=") ||
